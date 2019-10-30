@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,400i&display=swap');
 @font-face{
     src: url(../fonts/Kaushan.ttf);
     font-family: "Kaushan";
@@ -127,7 +127,7 @@ h3{
     text-align: center;
     font-family: "Kaushan", serif;
     font-size: 24px;
-    margin-top: 110px;
+    padding-top: 60px;
 }
 h3 span{
     font-family: "Montserrat", sant-serif;
@@ -306,15 +306,79 @@ h3::after{
     margin-bottom: 10px;
 }
 .screen5{
-
     background: url("../img/lake.png") center no-repeat;
     background-size: cover; 
 }
 .devices{
     width: 100%;
-    min-width: 600px;
+    max-width: 600px;
     margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
 }
+.devitem{
+    display: block;
+}
+.devitem-iphone{
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+    z-index: 1;
+}
+.screen6{
+    display: flex;
+}
+.wedoitem{
+    width: 50%;
+}
+.accitem{
+    border: 1px solid #e5e5e5;
+}
+.accicon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.acchead{
+    padding: 15px 20px 15px 65px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+.acchead:after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translatey(-50%)
+    rotate(-45deg);
+    margin-top: 5px;
+}
+.acctitle{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+    font-size: 14px;
+
+}
+.acccont{
+    padding: 15px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 400;
+    display: none;
+}
+
 .clearfix{
     clear: both;
 }
